@@ -61,7 +61,7 @@ li.listing .content h3 {
 
 li.listing .content h4 {
     font-size: 11px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 20px;
     margin: 0;
 }
@@ -97,4 +97,14 @@ button {
 
 button:hover {
     background-color: #e64d51;
+}
+
+.fa-trophy {
+    font-size: 11px;
+    margin: 0 3px 0 1px;
+    color: #e8c30d;
+}
+
+.superhost {
+    font-weight: 900;
 }
