@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import AirBnbs from './_data/airbnbs.json';
 import CartContainer from './CartContainer';
 import VacayRentalContainer from './VacayRentalContainer.js';
-import VacayRentalCard from './VacayRentalCard.js';
-import PropTypes from 'prop-types';
 import './App.css';
 import './vacayCard.css';
 

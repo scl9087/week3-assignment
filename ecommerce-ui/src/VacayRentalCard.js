@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-
 
 class VacayRentalCard extends Component {
 
     render() {
         const index = this.props.index;
         const listing = this.props.listing;
-        const starRating = listing.rating.stars
-        const isSuperhost = {display: this.props.listing.host.isSuperhost  ? 'inline-block' : 'none'};
+        const hasSuperHost = {display: this.props.listing.host.isSuperhost  ? 'inline-block' : 'none'};
 
         return(
             <li className="listing">
@@ -21,7 +18,7 @@ class VacayRentalCard extends Component {
                         <span className="stars">
                             {listing.rating.stars} <i className="fa fa-star" aria-hidden="true"></i>
                         </span> 
-                        ({listing.rating.reviews})  <span className="superhost" style={isSuperhost}> · <i className="fas fa-trophy"></i> 
+                        ({listing.rating.reviews})  <span className="superhost" style={hasSuperHost}> · <i className="fas fa-trophy"></i> 
                             Superhost
                         </span>
                     </h4>

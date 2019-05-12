@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import AirBnbs from './_data/airbnbs.json';
 import VacayRentalCard from './VacayRentalCard';
 
 class CartContainer extends Component {
 
     render() {
         const RentalList = this.props.rentalProperties
-
         .map((listing, index) => 
           <VacayRentalCard 
               listing={listing}
